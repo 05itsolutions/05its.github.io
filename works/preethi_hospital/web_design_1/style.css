@@ -1,0 +1,136 @@
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    background: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6{    
+    color: #db2728;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;    
+    text-align: center;
+}
+
+h2{font-size: 1.5em;}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    font-size: 13px;
+    color: #333333;
+    line-height: 2em;
+}
+
+#top_bar{
+    background-color: #db2728;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+#top_bar a, #top_bar a:hover{
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#top_bar a:hover{
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #db2728;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    color: #db2728;
+    font-weight: 500;
+}
+
+.active>.nav-link, .nav-link:hover{
+    color: #184475;
+}
+
+.row{ margin-right: 0px; margin-left: 0px;}
+
+#Specialities{
+    background-color: #db2728;
+    color: #ffffff;    
+}
+
+#Specialities h6{
+    color: #ffffff;
+    font-size: .6em;
+    text-transform: uppercase;
+}
+
+#stats .fa{
+    font-size: 3em;
+    text-align: center;
+    color: #184475;    
+}
+
+#stats h3, #stats h5{
+    color: #184475;
+}
+
+#stats h5{
+    font-size: 0.75em;
+}
+
+#facility{
+    background-image: url('images/facility_ambulance.jpg');
+    background-attachment: cover;
+    width: 100%;
+    padding: 200px 0px;
+    text-align: center;   
+    margin: 20px 0px;     
+}
+
+#facility h3{
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+#facility span{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #333333;
+}
+
+#testimonials{
+    background-color: #db2728;
+    color: #ffffff;    
+    padding: 30px 0px;
+}
+
+#testimonials h2, #testimonials h4, #testimonials p{
+    color: #ffffff;
+}
+
+#testimonials h4{
+    text-align: left;
+    font-size: 1em;
+}
+
+footer{
+    background-color: #184475; 
+    padding: 20px 0px;   
+    border-top: 5px solid #db2728;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+footer a, footer a:hover, footer h5, footer .fa{
+    color: #ffffff;    
+}
+
+footer ul{
+    list-style: none;
+    font-size: 0.9em;
+}
