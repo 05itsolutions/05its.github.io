@@ -52,6 +52,11 @@ p{
     font-weight: 500;
 }
 
+.navbar-toggler{color: #db2728; margin-top: 15px;}
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(219,39,40, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 .active>.nav-link, .nav-link:hover{
     color: #184475;
 }
@@ -133,4 +138,24 @@ footer a, footer a:hover, footer h5, footer .fa{
 footer ul{
     list-style: none;
     font-size: 0.9em;
+}
+
+@media screen and (max-width: 768px){
+    #Specialities{
+        height: 90px;
+        overflow: hidden;
+    }
+
+    #testimonials{
+        height: 530px;
+        overflow: hidden;
+    }
+
+    #testimonials .col-md-6{
+        margin-bottom: 20px;
+    }
+
+    #testimonials img{
+        padding: 30px;
+    }
 }
