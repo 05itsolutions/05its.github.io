@@ -1,0 +1,161 @@
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    background: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6{    
+    color: #184475;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;    
+    text-align: center;
+}
+
+h2{font-size: 1.5em;}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    font-size: 13px;
+    color: #333333;
+    line-height: 2em;
+}
+
+#top_bar{
+    background-color: #184475;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+#top_bar a, #top_bar a:hover{
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#top_bar a:hover{
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #184475;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    color: #184475;
+    font-weight: 500;
+}
+
+.navbar-toggler{color: #184475; margin-top: 15px;}
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(219,39,40, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.active>.nav-link, .nav-link:hover{
+    color: #db2728;
+}
+
+.row{ margin-right: 0px; margin-left: 0px;}
+
+#Specialities{
+    background-color: #184475;
+    color: #ffffff;    
+}
+
+#Specialities h6{
+    color: #ffffff;
+    font-size: .6em;
+    text-transform: uppercase;
+}
+
+#stats .fa{
+    font-size: 3em;
+    text-align: center;
+    color: #db2728;    
+}
+
+#stats h3, #stats h5{
+    color: #db2728;
+}
+
+#stats h5{
+    font-size: 0.75em;
+}
+
+#facility{
+    background-image: url('images/facility_ambulance.jpg');
+    background-attachment: cover;
+    width: 100%;
+    padding: 200px 0px;
+    text-align: center;   
+    margin: 20px 0px;     
+}
+
+#facility h3{
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+#facility span{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #333333;
+}
+
+#testimonials{
+    background-color: #184475;
+    color: #ffffff;    
+    padding: 30px 0px;
+}
+
+#testimonials h2, #testimonials h4, #testimonials p{
+    color: #ffffff;
+}
+
+#testimonials h4{
+    text-align: left;
+    font-size: 1em;
+}
+
+footer{
+    background-color: #db2728; 
+    padding: 20px 0px;   
+    border-top: 5px solid #184475;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+footer a, footer a:hover, footer h5, footer .fa{
+    color: #ffffff;    
+}
+
+footer ul{
+    list-style: none;
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 768px){
+    #Specialities{
+        height: 90px;
+        overflow: hidden;
+    }
+
+    #testimonials{
+        height: 530px;
+        overflow: hidden;
+    }
+
+    #testimonials .col-md-6{
+        margin-bottom: 20px;
+    }
+
+    #testimonials img{
+        padding: 30px;
+    }
+}
