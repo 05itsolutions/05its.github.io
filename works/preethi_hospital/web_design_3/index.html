@@ -1,0 +1,311 @@
+<html>
+<head>
+    <title>Preethi Hospital</title>
+    <meta name="viewport" content="width=device-width intial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="row bgheader">
+            &nbsp;
+        </div>
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-md-2 col-6 mt-3">
+                    <img src="images/preethi_hospitals_logo.jpg" class="img-fluid">
+                </div>
+                <div class="col-md-10 col-6 text-right social pt-2">
+                    24/7 Help Line: 7810044444, 0452-4219995/6/7<br/><br/>
+                    <a href="" class="d-none d-sm-inline med"><i class="fa fa-facebook-square"></i></a>
+                    <a href="" class="d-none d-sm-inline med"><i class="fa fa-google-plus-square"></i></a>
+                    <a href="" class="d-none d-sm-inline med"><i class="fa fa-twitter-square"></i></a>
+                    <a href="" class="d-none d-sm-inline med"><i class="fa fa-youtube-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row menubg">
+            <nav class="navbar navbar-expand-md">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>&nbsp;Menu
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active mr-5"><a class="nav-link" href="#"><i class="fa fa-home"></i>&nbsp;Home</a></li>
+                        <li class="nav-item mr-5"><a class="nav-link" href="#"><i class="fa fa-hospital-o"></i>&nbsp;About
+                                Us
+                            </a></li>
+                        <li class="nav-item mr-5"><a class="nav-link" href="#"><i class="fa fa-heartbeat"></i>&nbsp;Specialities</a></li>
+                        <li class="nav-item mr-5"><a class="nav-link" href="#"><i class="fa fa-ambulance"></i>&nbsp;Facilitites</a></li>
+                        <li class="nav-item mr-5"><a class="nav-link" href="#"><i class="fa fa-graduation-cap"></i>&nbsp;Education
+                                &amp; Research</a></li>
+                        <li class="nav-item mr-5"><a class="nav-link" href="#"><i class="fa fa-user-md"></i>&nbsp;Patient
+                                Care
+                            </a></li>
+                        <li class="nav-item mr-5"><a class="nav-link" href="#"><i class="fa fa-thumbs-up"></i>&nbsp;Careers</a></li>
+                        <li class="nav-item mr-5"><a class="nav-link" href="#"><i class="fa fa-envelope"></i>&nbsp;Contact
+                                Us
+                            </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="slide fadeImg">
+            <img src="images/preethi_header_image_1.jpg" alt="header" class="">
+            <img src="images/preethi_header_image_2.jpg" alt="header" style="display: none;" class="">
+            <img src="images/preethi_header_image_3.jpg" alt="header" style="display: none;" class="">
+            <img src="images/preethi_header_image_4.jpg" alt="header" style="display: none;" class="">
+            <img src="images/preethi_header_image_5.jpg" alt="header" style="display: none;" class="">
+            <img src="images/preethi_header_image_6.jpg" alt="header" style="display: none;" class="">
+    </div>
+    <script type="text/javascript">
+        next = 1;			// fixed, please do not modfy;
+        current = 0;		// fixed, please do not modfy;
+        interval = 4000;	// You can set single picture show time;
+        fadeTime = 800;	// You can set fadeing-transition time;
+        imgNum = 6;		// How many pictures do you have
+
+        $(document).ready(function () {
+            //NOTE : Div Wrapper should with css: relative;
+            //NOTE : img should with css: absolute;
+            //NOTE : img Width & Height can change by you;
+            $('.fadeImg').css('position', 'relative');
+            $('.fadeImg img').css('position', 'absolute');
+
+            nextFadeIn();
+        });
+
+        function nextFadeIn() {
+            //make image fade in and fade out at one time, without splash vsual;
+            jQuery('.fadeImg img').eq(current).delay(interval).fadeOut(fadeTime).end().eq(next).delay(interval).hide().fadeIn(fadeTime, nextFadeIn);
+
+            // if You have 5 images, then (eq) range is 0~4 
+            // so we should reset to 0 when value > 4; 
+            if (next < imgNum - 1) { next++; } else { next = 0; }
+            if (current < imgNum - 1) { current++; } else { current = 0; }
+        };
+    </script>
+    <div id="stats" class="container mb-5">
+        <h2 class="text-center pt-5">Our Stats</h2>
+        <div class="row text-center pt-2">
+            <div class="col-sm-2 col-4">
+                <i class="fa fa-scissors p-2"></i>
+                <h3 class="counter">2200</h3>
+                <h5>Surgeries / Year</h5>
+            </div>
+            <div class="col-sm-2 col-4">
+                <i class="fa fa-calendar p-2"></i>
+                <h3 class="counter">20</h3>
+                <h5>Years of Service</h5>
+            </div>
+            <div class="col-sm-2 col-4">
+                <i class="fa fa-user-md p-2"></i>
+                <h3 class="counter">100</h3>
+                <h5>Doctors</h5>
+            </div>
+            <div class="col-sm-2 col-4">
+                <i class="fa fa-bed p-2"></i>
+                <h3 class="counter">250</h3>
+                <h5>Beds</h5>
+            </div>
+            <div class="col-sm-2 col-4">
+                <i class="fa fa-heartbeat p-2"></i>
+                <h3 class="counter">22</h3>
+                <h5>Departments</h5>
+            </div>
+            <div class="col-sm-2 col-4">
+                <i class="fa fa-bed p-2"></i>
+                <h3 class="counter">50</h3>
+                <h5>Beded ICU</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="specialist mt-5 statscolorbg pb-5 pt-5">
+        <h3 class="text-center">Our Specialities</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-4 row mt-4 mb-4">
+                    <div class="col-sm-2 col-12">
+                        <img src="images/specialities_cardiology.png" alt="Cardiology" class="img-fluid">
+                    </div>
+                    <div class="col-sm-9 col-12">
+                        <h6>Cardiology</h6>
+                        <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipicing. Quisque dapibus suspcipit
+                            ante ut rhoncus.Lorem ipsum dolor sit amet, consectetur adipicing. Quisque dapibus suspcipit
+                            ante ut rhoncus
+                        </p>
+                        <h6 class="d-none d-sm-block">READ MORE</h6>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-4 row mt-4 mb-4">
+                    <div class="col-sm-2 col-12">
+                        <img src="images/specialities_dental.png" alt="Dental" class="img-fluid">
+                    </div>
+                    <div class="col-md-9 col-12">
+                        <h6>Dental</h6>
+                        <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipicing. Quisque dapibus suspcipit
+                            ante ut rhoncus.Lorem ipsum dolor sit amet, consectetur adipicing. Quisque dapibus suspcipit
+                            ante ut rhoncus</p>
+                        <h6 class="d-none d-sm-block">READ MORE</h6>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-4 row mt-4 mb-4">
+                    <div class="col-sm-2 col-12">
+                        <img src="images/specialities_ent.png" alt="ENT" class="img-fluid">
+                    </div>
+                    <div class="col-md-9 col-12">
+                        <h6>ENT</h6>
+                        <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipicing. Quisque dapibus suspcipit
+                            ante ut rhoncus.Lorem ipsum dolor sit amet, consectetur adipicing. Quisque dapibus suspcipit
+                            ante ut rhoncus.</p>
+                        </p>
+                        <h6 class="d-none d-sm-block">READ MORE</h6>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-4 row mt-4 mb-4">
+                    <div class="col-sm-2 col-12">
+                        <img src="images/specialities_nerulogy.png" alt="Neurology" class="img-fluid">
+                    </div>
+                    <div class="col-md-9 col-12">
+                        <h6>Neurology</h6>
+                        <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipicing. Quisque dapibus suspcipit
+                            ante ut rhoncus.Lorem ipsum dolor sit amet, consectetur adipicing. Quisque dapibus suspcipit
+                            ante ut rhoncus.</p>
+                        </p>
+                        <h6 class="d-none d-sm-block">READ MORE</h6>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-4 row mt-4 mb-4">
+                    <div class="col-sm-2 col-12">
+                        <img src="images/specialities_urology.png" alt="Urology" class="img-fluid">
+                    </div>
+                    <div class="col-md-9 col-12">
+                        <h6>Urology</h6>
+                        <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipicing. Quisque dapibus suspcipit
+                            ante ut rhoncus.Lorem ipsum dolor sit amet, consectetur adipicing. Quisque dapibus suspcipit
+                            ante ut rhoncus.</p>
+                        </p>
+                        <h6 class="d-none d-sm-block">READ MORE</h6>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-4 row mt-4 mb-4">
+                    <div class="col-sm-2 col-12">
+                        <img src="images/specialities_gynaecology.png" alt="Gynaecology" class="img-fluid">
+                    </div>
+                    <div class="col-md-9 col-12">
+                        <h6>Gynaecology</h6>
+                        <p class="d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipicing. Quisque dapibus suspcipit
+                            ante ut rhoncus.Lorem ipsum dolor sit amet, consectetur adipicing. Quisque dapibus suspcipit
+                            ante ut rhoncus.</p>
+                        </p>
+                        <h6 class="d-none d-sm-block">READ MORE</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="features" class="row">
+        <div class="col-md-12 text-center">
+            <h6 class="mt-5 mb-5">Did you know? Preethi Multispeciality hospital provides 
+                <span class="spanbg mt-4 spanshadow">24 hours Ambulance services</span>
+            </h6>
+        </div>
+    </div>
+    </div>
+    <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="text-center mb-4">Testimonials</h3>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="images/patient_image1.jpg" alt="Patient" class="img-fluid" />
+                        </div>
+                        <div class="col-8">
+                            <h5>Mr. Lorem Ipsum</h5>
+                            <p>Curabitur ut rutrum ante. Sed dapibus sem scelerisque lorem fringilla, nec malesuada
+                                magna
+                                ullamcorper. In in cursus magna. Nunc cursus tellus dolor, a vehicula dui vulputate ac.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-center mb-4">Preethi Times</h3>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="images/preethi_times.jpg" alt="preethi_times" class="img-fluid" />
+                        </div>
+                        <div class="col-8">
+                            <p>Curabitur ut rutrum ante. Sed dapibus sem scelerisque lorem fringilla, nec malesuada
+                                magna
+                                ullamcorper. In in cursus magna. Nunc cursus tellus dolor, a vehicula dui vulputate ac.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <footer>
+        <div class="container">
+        <div class="row footer">
+            <div class="col-md-3">
+                <h5 class="mt-5 mb-5">Quick Links</h5>
+                <ul class="list-inline">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">SPECIALIES</a></li>
+                    <li><a href="">FACILITIES</a></li>
+                    <li><a href="">EDUCATION AND RESEARCH</a></li>
+                    <li><a href="">PATIENT CARE</a></li>
+                    <li><a href="">CARRERS</a></li>
+                </ul>
+            </div>
+            <div class="col-md-5">
+                <h5 class="mt-5 mb-5">CONTACTS US</h5>
+                <p><i class="fa fa-phone"></i> 0452 - 4219995/6/7</p>
+                <p><i class="fa fa-mobile"></i> 78100 44444</p>
+                <p><i class="fa fa-map-marker"></i> Uthangudi, Melur Main Road, Madurai - 625 107</p>
+                <p><i class="fa fa-map-marker"></i> 120 feet Rd, Ganesh Nagar,K.pudur Madurai -625007</p>
+                <p><i class='fa fa-envelope'></i> info@preethihospitals.com</p>
+                <a href="" class="pr-3"><i class="fa fa-facebook-square icons"></i></a>
+                <a href="" class="pr-3"><i class="fa fa-google-plus-square icons"></i></a>
+                <a href="" class="pr-3"><i class="fa fa-twitter-square icons"></i></a>
+                <a href=""><i class="fa fa-youtube-square icons"></i></a>
+            </div>
+            <div class="col-md-4">
+                <h5 class="mt-5 mb-5">Quick Contact</h5>
+                <form action="/action_page.php">
+                    <div class="input-group mb-3">
+
+                        <input type="text" class="form-control" placeholder="Username" id="usr" name="username">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Your Email" id="mail" name="email">
+
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <script src="scripts/jquery.waypoints.min.js"></script>
+	<script src="scripts/jquery.countup.js"></script>
+	<script type="text/javascript">
+		$('.counter').countUp();
+        $(document).ready(function(){
+            $('.carousel').carousel({
+                interval: 2000
+            });
+        });
+    </script>
+</body>
