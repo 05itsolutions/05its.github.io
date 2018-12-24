@@ -70,7 +70,16 @@ nav .active{ border-bottom: 2px solid #286da8;}
 #specialities .col-4{padding: 20px 10px;}
 #specialities .col-4 h6{ text-align: left;}
 #specialities .col-4:hover h6{color: #286da8;}
-#doctors{background-color: #d0e8fd; width: 100%; padding: 40px 0px; margin: 60px 0px;}
+
+#doctors{
+    background-image: url('images/pims_multispeciality_hospital.jpg');
+    background-attachment: fixed;
+    background-size: cover; width: 100%; padding: 40px 0px; margin: 60px 0px;
+    border-top: 2px solid #286da8;
+    border-bottom: 2px solid #286da8;
+}
+
+#doctors .container{ background-color: rgba(255, 255, 255, 0.9)}
 
 footer{
     background-color: #286da8; 
