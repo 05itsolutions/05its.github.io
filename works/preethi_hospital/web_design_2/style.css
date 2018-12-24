@@ -1,0 +1,96 @@
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6{    
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;    
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.25ch;
+}
+
+h2{font-size: 1.5em;}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    font-size: 12px;
+    color: #333333;
+    line-height: 2em;
+}
+
+header{background-color: #ffffff;}
+
+a{ color: #286da8; }
+a:hover{ text-decoration: none; color: #286da8}
+
+.row{ margin-right: 0px; margin-left: 0px;}
+
+#top_bar{    
+    background-color: #286da8;
+    color: #ffffff;
+}
+
+#top_bar a, #top_bar a:hover{ color: #ffffff; margin: 0px 10px; font-weight: 600;}
+#top_bar .fa{ font-weight: normal; font-size: 14px;}
+
+.top_button{ border-right: 1px solid #333333;}
+.top_button:last-of-type{border-right: none;}
+
+.top_button a{
+    color: #286da8;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.top_button .fa{
+    font-size: 1.5em;
+}
+
+header nav a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+nav .active{ border-bottom: 2px solid #286da8;}
+.navbar-toggler{color: #286da8; margin-top: 15px; font-size: 1em;}
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(40,109,168, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#specialities .col-4{padding: 20px 10px;}
+#specialities .col-4 h6{ text-align: left;}
+#specialities .col-4:hover h6{color: #286da8;}
+#doctors{background-color: #d0e8fd; width: 100%; padding: 40px 0px; margin: 60px 0px;}
+
+footer{
+    background-color: #286da8; 
+    padding: 20px 0px;
+    margin-top: 60px;
+    color: #ffffff;
+}
+
+footer a, footer a:hover, footer h5, footer .fa{
+    color: #ffffff;    
+}
+
+footer ul{
+    list-style: none;
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 400px){
+    #specialities h6{
+        font-size: 12px;
+        text-align: center;
+    }
+}
