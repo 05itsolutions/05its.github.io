@@ -8,6 +8,7 @@ body{
     padding: 0px;
     font-family: 'Poppins', sans-serif;
     background: #ffffff;
+    color: #333333;
 }
 
 h1, h2, h3, h4, h5, h6{    
@@ -24,7 +25,7 @@ h2{font-size: 1.5em;}
 p{
     font-family: 'Poppins', sans-serif;
     text-align: justify;
-    font-size: 12px;
+    font-size: 14px;
     color: #333333;
     line-height: 2em;
 }
@@ -61,10 +62,24 @@ header nav a{
     font-weight: 500;
     text-transform: uppercase;
 }
-nav .active{ border-bottom: 2px solid #286da8;}
-.navbar-toggler{color: #286da8; margin-top: 15px; font-size: 1em;}
-.navbar-toggler-icon{
+header nav .active{ border-bottom: 2px solid #286da8;}
+header .navbar-toggler{color: #286da8; margin-top: 15px; font-size: 1em;}
+header .navbar-toggler-icon{
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(40,109,168, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.bg-custom{
+    background-color: #286da8;
+}
+
+#SpecialitiesMenu nav a{
+    color: #ffffff;
+    padding-left: 10px;
+}
+#SpecialitiesMenu nav .active{ background-color: #ffffff; color: #286da8;}
+#SpecialitiesMenu .navbar-toggler{color: #ffffff; font-size: 1em;}
+#SpecialitiesMenu .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 #specialities .col-4{padding: 20px 10px;}
@@ -80,6 +95,33 @@ nav .active{ border-bottom: 2px solid #286da8;}
 }
 
 #doctors .container{ background-color: rgba(255, 255, 255, 0.9)}
+
+.doctor_team{padding: 10px; margin-bottom: 25px; border-bottom: 1px solid #dddddd;}
+.doctor_team h3{ font-size: 1.25em;}
+.doctor_team h5{ font-size: 0.8em;}
+.doctor_team h6{ font-size: 0.6em;}
+
+.tags a{ color: #888888; margin: 0px 10px;}
+.teg-1
+{
+    font-size: 12px; 
+}
+.teg-2
+{
+    font-size: 16px; 
+}
+.teg-3
+{
+    font-size: 14px; 
+}
+.teg-4
+{
+    font-size: 18px; 
+}
+.teg-5
+{
+    font-size: 10px; 
+}
 
 footer{
     background-color: #286da8; 
