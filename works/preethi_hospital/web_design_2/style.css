@@ -95,6 +95,7 @@ header .navbar-toggler-icon{
 }
 
 #doctors .container{ background-color: rgba(255, 255, 255, 0.9)}
+#doctors h5{ font-size: 1em;}
 
 .doctor_team{padding: 10px; margin-bottom: 25px; border-bottom: 1px solid #dddddd;}
 .doctor_team h3{ font-size: 1.25em;}
