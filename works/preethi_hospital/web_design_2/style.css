@@ -144,5 +144,8 @@ footer ul{
     #specialities h6{
         font-size: 12px;
         text-align: center;
+    }        
+    #top_bar{
+        font-size: 0.75em;
     }
 }
