@@ -127,6 +127,10 @@ header .navbar-toggler-icon{
     font-size: 10px; 
 }
 
+#bookAppointment .form-control{ font-size: 1em;}
+#bookAppointment .modal-title{ font-size: 1.25em;}
+#bookAppointment .btn{ font-size: 1em;
+    
 footer{
     background-color: #286da8; 
     padding: 20px 0px;
