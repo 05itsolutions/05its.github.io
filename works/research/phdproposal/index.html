@@ -58,12 +58,14 @@ body.custom-background { background-image: url("https://mk0cpothemesdemokfq4.kin
 			
 						color:#9999aa;
 
-background: url('images/bg1.jpg');
-background-blend-mode: multiply;
-						background-position: center top;
-background-size: cover;
-background-repeat: no-repeat;
-background-attachment: fixed;
+background: #ff9800;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #f2593a, #ff9800);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #f2593a, #ff9800); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+					}
+
+					.home .team, .home .services, .tagline{
+						background: transparent;
 					}
 
 
