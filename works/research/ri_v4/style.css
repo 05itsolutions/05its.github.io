@@ -1,0 +1,161 @@
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Work Sans', sans-serif;
+    background: #ffffff;
+    color: #333333;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6{    
+    color: #0e304e;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;    
+    text-align: center;
+    letter-spacing: 0.25ch;
+    font-size: 1.8em;
+}
+
+h2{font-size: 1.5em;}
+h3{font-size: 1.4em;}
+h4{font-size: 1.3em;}
+h5{font-size: 1.2em;}
+h6{font-size: 1.1em;}
+
+p, li{
+    font-family: 'Work Sans', sans-serif;
+    text-align: justify;
+    font-size: 14px;
+    color: #000000;
+    line-height: 2em;
+}
+
+a{ color: #0e304e; }
+a:hover{ text-decoration: none; color: #0e304e}
+
+.row{ margin-right: 0px; margin-left: 0px;}
+
+header{
+    border-top: 3px solid #f89121;
+    padding-top: 20px;
+}
+
+header .fa{    
+    color: #f89121;
+    /*border: 1px solid #f89121;
+    background-color: #ffffff;*/
+    font-size: 1.5em;    
+    padding: 7px 0px;
+    /*padding: 7px 7px;*/
+    border-radius: 10px;
+}
+
+.header-button{
+    line-height: 1.3em;
+    font-size: 0.8em; 
+    margin-top: 10px;   
+    color: #333333;
+}
+
+.header-button b{font-weight: 500;}
+
+nav{
+    padding: 10px;
+    margin-top: 20px;
+    background: #0e304e;
+    border-bottom: 5px solid #f89121;
+    border-radius: 5px;
+}
+
+nav a, nav a:hover, nav a:any-link{
+    /*color: #f89121;*/
+    color: #ffffff;
+    font-size: 1.1em;    
+    font-weight: 500;    
+}
+
+.navbar-nav{ width: 100%;}
+
+.nav-item{
+    width: 14%;
+    text-align: center;
+}
+
+nav .active a{
+    color: #f89121;   
+}
+
+.dropdown-menu{
+    background: #0e304e;
+}
+
+.dropdown-item:hover a{
+    color: #0e304e;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+ }
+
+ .bg-ri{
+    background-image: url('images/bg.jpg'); background-size: cover;
+    
+ }
+
+ .bg-ri-light{
+     background-color: rgba(255, 255, 255, 0.75);
+ }
+
+ .bg-feature{
+    background-image: url('images/feature-bg.jpg'); background-size: cover;
+ }
+
+ .btn-ri{background-color: #f89121; color: #ffffff;}
+
+ .shadow-ri{
+     box-shadow: 0px 0px 8px #888888;
+ }
+
+ .stats .fa{ 
+     color: #ffffff;      
+     font-size: 2.5em; 
+     
+}
+
+ .stats h3, .stats h5{color: #ffffff; text-transform: uppercase;}
+
+ footer{
+    width: 100%;
+    background: #0e304e;
+    border-top: 5px solid #f89121;
+ }
+
+ footer ul{
+     list-style: none;
+     padding: 0px;
+     margin: 20px 0px;
+ }
+
+ footer li{
+     color: #ffffff;
+     margin: 10px 0px;
+     font-weight: 500;
+ }
+
+ footer a, footer a:hover, footer a:any-link{color: #ffffff;}
+
+ footer .fa{
+     color: #ffffff;
+     font-size: 2em;
+     margin: 10px;
+ }
+
+ .bgcompany{
+    background-color: #f89121;
+ }
