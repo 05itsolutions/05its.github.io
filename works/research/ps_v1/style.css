@@ -1,0 +1,147 @@
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+    background: #ffffff;
+    color: #333333;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6{    
+    color: #7f161a;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;    
+    text-align: center;
+    letter-spacing: 0.25ch;
+    font-size: 1.8em;
+}
+
+h2{font-size: 1.5em;}
+h3{font-size: 1.4em;}
+h4{font-size: 1.3em;}
+h5{font-size: 1.2em;}
+h6{font-size: 1.1em;}
+
+p, li{
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    color: #222222;
+    line-height: 2em;
+}
+
+a{ color: #7f161a; }
+a:hover{ text-decoration: none; color: #7f161a}
+
+.row{ margin-right: 0px; margin-left: 0px;}
+
+.bg-ps, .btn-ps{background-color: #7f161a;}
+.btn-ps{color:#ffffff;}
+.btn-ps:hover{background-color: #9c1c21; color: #ffffff;}
+.bg-ps1
+{
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7f161a, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7f161a, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-ps-image
+{
+    background:linear-gradient(0deg,rgba(51,51,51,0.75),rgba(51,51,51,0.75)),url('images/phd-services-bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-evolution
+{
+    /*background:linear-gradient(0deg,rgba(51,51,51,0.5),rgba(51,51,51,0.5)),url('images/evolution1.png');*/
+    background-image: url('images/evolution1.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-white-trans{
+    background-color: rgba(255, 255, 255, 0.9);
+    
+}
+
+header
+{
+    border-top: 4px solid #7f161a;
+}
+
+nav a
+{
+    color: #ffffff;
+    text-shadow: 2px 2px #222222;
+    font-size: 0.8em;
+}
+
+nav a:hover, nav .active{ background-color: #222222; color: #ffffff; }
+
+.navbar-nav .nav-link, .navbar-expand-md .navbar-nav .nav-link
+{
+    padding: .5rem 1.25rem;
+}
+
+.bg-features
+{
+    background-image: url('images/bg-features.png'); background-size: cover; background-repeat: no-repeat;
+    /*-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;  
+	box-sizing: border-box;       
+    
+    border: 10px solid #7f161a;    
+    border-image: url('images/border.png') 34% repeat;*/
+}
+
+.product
+{
+    margin-top: 70px;
+}
+
+.product img
+{
+    margin-top: -50px;
+    border-radius: 10px;
+}
+
+.product:hover img{
+    margin-top: -60px;
+    margin-bottom: 10px;
+}
+
+.newsletter
+{
+    background-image: url('images/dont_worry_about_phd1.png'); background-size: cover; background-repeat: no-repeat;    
+}
+
+.newsletter .form-control, .newsletter .input-group-text
+{
+    border-color: #7f161a;
+}
+
+.bg-evolution .form-control
+{
+    border: none;
+    border-bottom: 1px solid #7f161a;
+    background-color: transparent;
+    border-radius: 0px;
+}
+
+.bg-evolution textarea
+{
+    height: 150px;
+}
+
+footer
+{
+    /*border-top: 5px solid #222222;
+    border-bottom: 10px solid #222222;*/
+    background-color: #7f161a;
+    box-shadow: 0px -2px 10px #888888;
+}
