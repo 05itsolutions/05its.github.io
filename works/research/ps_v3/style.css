@@ -45,7 +45,7 @@ a:hover{ text-decoration: none; color: #7f161a}
 .bg-ps, .btn-ps{background-color: #7f161a;}
 .btn-ps{color:#ffffff;}
 .btn-ps:hover{background-color: #9c1c21; color: #ffffff;}
-.border-ps{border-color: #7f161a;}
+.border-ps{border: 1px solid #7f161a;}
 .text-ps{color: #7f161a;}
 .bg-ps-image
 {
@@ -170,6 +170,80 @@ nav #faq:hover a{ background-color: #9c1c21; }
 {
     padding: 20px 50px;
     margin-top: 75px;
+}
+
+#contact-form .form-control
+{
+    border-color: #7f161a;
+    color: #7f161a;
+}
+
+#contact-form .input-group-text
+{
+    background-color: #7f161a;
+    color: #ffffff;
+    border: 1px solid #7f161a;
+}
+
+#contact-form .form-check-input
+{
+    outline: 1px solid #7f161a;
+}
+
+.fa-li-r
+{
+    position: absolute;
+    right: -2.46em;
+    width: auto;
+    top: .14285714em;
+    text-align: center;
+}
+
+.timeline 
+{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}  
+
+.timeline::after 
+{
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color: #7f161a;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.left::before 
+{
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 15px;
+    border: medium solid #7f161a;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #7f161a;
+}
+
+.right::before 
+{
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 15px;
+    border: medium solid #7f161a;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #7f161a transparent transparent;
 }
 
 footer
