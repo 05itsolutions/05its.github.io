@@ -199,6 +199,8 @@ nav #faq:hover a{ background-color: #9c1c21; }
     text-align: center;
 }
 
+/*#milestone_slides .carousel-item{transition: none;}*/
+
 .timeline 
 {
     position: relative;
@@ -244,6 +246,78 @@ nav #faq:hover a{ background-color: #9c1c21; }
     border: medium solid #7f161a;
     border-width: 10px 10px 10px 0;
     border-color: transparent #7f161a transparent transparent;
+}
+
+.sub-heading 
+{
+    color: #7f161a;
+    text-align: left;
+    margin: 30px 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #7f161a;
+}
+
+.sub-heading::before
+{
+    content: '\f0a9';
+    font-family: 'FontAwesome';
+    margin-right: 15px;
+    /*font-size: 0.75em;
+    
+    /*color: #ffffff;
+    background-color: #7f161a;
+    padding: 3px;
+    margin-right: 10px;
+    border-radius: 50%;*/
+}
+
+.slogan
+{
+    width: 75%;
+    background-color: #7f161a;
+    color: #ffffff;
+    text-align: center;
+    margin: 50px auto;
+    padding: 25px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    font-style: italic;
+    box-shadow: 0px 0px 10px #666;
+}
+
+.slogan::before
+{
+    content: '\f10d';
+    font-family: 'FontAwesome';
+    font-size: 1.5em;
+    margin-right: 80%;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.slogan::after
+{
+    content: '\f10e';
+    font-family: 'FontAwesome';
+    font-size: 1.5em;
+    margin-left: 80%;
+    margin-top: 10px;
+    display: block;
+}
+
+.topics p
+{
+    color: #ffffff;
+    border-bottom: 1px dotted #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;    
+    border-radius: 5px;
+}
+
+.topics p:hover
+{
+    background-color: #333333;
+    font-style: italic;
 }
 
 footer
