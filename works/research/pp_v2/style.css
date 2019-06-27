@@ -47,6 +47,7 @@ a:hover{ text-decoration: none; color: #666}
 .line{ width: 100px; background-color: #bbb;}
 
 .border-pp{border-color: #bbb !important;}
+.border-pp1{border-color: #d44900 !important;}
 .bg-pp{background-image: linear-gradient(to left, #d44900, #e4601a);}
 .btn-pp{background-color: #d44900; color:#ffffff;}
 .btn-pp:hover{background-color: #e4601a; color: #ffffff;}
@@ -237,3 +238,95 @@ footer h3::after {
     transform-origin: 100% 50%; 
     transform: rotate(90deg) translate(50%, 50%) translate3d( 0, 0, 0);
 }
+
+.border-anim{
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;  
+}
+
+.border-anim:hover img{    
+    animation: 1s resize linear infinite;
+}
+
+@keyframes resize{
+    0%{width: 100%; transform: rotate(0deg);}    
+
+    25%{transform: rotate(-5deg);}
+
+    50%{width: 100%;transform: rotate(0deg);}
+
+    75%{transform: rotate(5deg);}
+
+    100%{width: 100%; transform: rotate(0deg);}
+}
+
+.border-anim span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;    
+  }
+  
+  .border-anim span:nth-child(1)
+  {
+    transform:rotate(0deg);
+  }
+  
+  .border-anim span:nth-child(2)
+  {
+    transform:rotate(90deg);   
+   
+  }
+  
+  .border-anim span:nth-child(3)
+  {
+    transform:rotate(180deg);
+  }
+  
+  .border-anim span:nth-child(4)
+  {
+    transform:rotate(270deg);
+    
+  }
+  
+  .border-anim span:before
+  {
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 2px;
+    background: #d44900;
+    animation: animate 1.5s linear infinite;
+  }
+
+  .border-anim:hover span::before{animation: none; display: none;}
+
+  @keyframes animate {
+    0% {
+    transform:scaleX(0);
+    transform-origin: left;
+    }
+    50%
+    {
+      transform:scaleX(1);
+    transform-origin: left;
+    }
+    50.1%
+    {
+      transform:scaleX(1);
+    transform-origin: right;      
+    }
+    
+    100%
+    {
+      transform:scaleX(0);
+    transform-origin: right;
+    }
+    
+    
+  } 
