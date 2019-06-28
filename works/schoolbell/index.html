@@ -31,12 +31,22 @@
             <div id="user" class="container tab-pane active"><br>
                 <input type="text" class="form-control border-danger mb-3" id="userid" placeholder="User Id"/>
                 <textarea type="text" class="form-control border-danger" id="usermsg" placeholder="Your Message" ></textarea>
-                <input type="button" class="btn btn-danger mt-2 ml-auto d-block px-4"  onclick="sendUser('user')" value="Send" />
+                <div class="row">
+                    <div class="col-6"><span id="infouser"></span></div>
+                    <div class="col-6">
+                        <input type="button" class="btn btn-danger mt-2 ml-auto d-block px-4"  onclick="sendUser('user')" value="Send" />
+                    </div>
+                </div>
             </div>
             <div id="channel" class="container tab-pane "><br>
                 <input type="text" class="form-control border-danger mb-3" id="channelid" placeholder="Channel"/>
                 <textarea type="text" class="form-control border-danger" id="channelmsg" placeholder="Your Message" ></textarea>
-                <input type="button" class="btn btn-danger mt-2 ml-auto d-block px-4"  onclick="sendUser('channel')" value="Send" />
+                <div class="row">
+                    <div class="col-6"><span id="infochannel"></span></div>
+                    <div class="col-6">
+                        <input type="button" class="btn btn-danger mt-2 ml-auto d-block px-4"  onclick="sendUser('channel')" value="Send" />
+                    </div>
+                </div>
             </div>
             <div id="menu2" class="container tab-pane "><br>
                 <h3>Menu 2</h3>
@@ -54,7 +64,12 @@
               
                 xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
-                  alert(this.responseText);
+                    if(type=="user"){                 
+                        $('#infouser').text(this.responseText);
+                    }
+                    else{
+                        $('#infochannel').text(this.responseText);
+                    }                  
                 }
               };
 
@@ -63,10 +78,13 @@
                 var s="";
                 if(type=="user"){
                     s="user_id="+$('#userid').val()+"&msg="+$('#usermsg').val()+"&submit=submit";
+                    $('#infouser').text('Sending...');
                 }
                 else{
                     s="user_id="+$('#channelid').val()+"&msg="+$('#channelmsg').val()+"&submit=submit";
+                    $('#infochannel').text('Sending...');
                 }
+                
                 xhttp.send(s);
             }
             </script>
