@@ -356,6 +356,6 @@ footer h3::after {
 .zoom{animation: zoominandout 1s infinite;}
 .dance{animation: resize 0.5s infinite;}
 
-.shake:hover, .zoom-row:hover .zoom, .dance:hover{animation: none;}
+.shake:hover, .zoom-row:hover .zoom, .dance:hover{animation-play-state: paused;}
 
 .zoom:nth-child(2), .zoom:nth-child(4){animation-delay: 0.5s;}
