@@ -353,9 +353,40 @@ footer h3::after {
 }
 
 .shake{animation: shaking 0.5s infinite;}
-.zoom{animation: zoominandout 1s infinite;}
+.zoom{animation: zoominandout 3s infinite;}
 .dance{animation: resize 0.5s infinite;}
 
 .shake:hover, .zoom-row:hover .zoom, .dance:hover{animation-play-state: paused;}
 
-.zoom:nth-child(2), .zoom:nth-child(4){animation-delay: 0.5s;}
+.zoom:nth-child(2), .zoom:nth-child(4){animation-delay: 1.5s;}
+
+#Message{position: fixed; bottom: 60px; right: 2px; z-index: 999;}
+.chat-with-us{position: fixed; bottom: 0px; right: 1px; z-index: 999;}
+
+#Message::after {
+    content: " ";
+    height: 0;
+    position: absolute;
+    bottom: -10px;
+    width: 0;
+    z-index: 1;
+    left: 45%;
+    border: medium solid #343a40;
+    border-width: 10px 10px 0px 10px;
+    border-color: #343a40 transparent transparent transparent;
+    
+}
+
+#Message::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    bottom: -11px;
+    width: 0;
+    z-index: 1;
+    left: 45%;
+    border: medium solid #fff;
+    border-width: 10px 10px 0px 10px;
+    border-color: #fff transparent transparent transparent;
+    
+}
