@@ -55,6 +55,16 @@ a:hover{ text-decoration: none; color: #666}
 .text-pp{color: #d44900;}
 
 .features-icon{width: 100px; height: 100px;}
+.features-icon-img{width: 40px; height: 40px; background: url('images/key_features.png'); margin: 30px auto;}
+.plagiarism{background-position: -10px -70px;}
+.guarantee{background-position: -10px -10px;}
+.novel{background-position: -70px -10px;}
+
+.core-services-icon{width: 40px; height: 40px; background: url('images/core_services.png');}
+.proposal{background-position: -70px -10px;}
+.code{background-position: -70px -70px;}
+.paper-writing{background-position: -10px -10px;}
+.thesis-writing{background-position: -10px -70px;}
 
 footer ul{ list-style: none;}
 footer li, footer p, footer h3, footer a, footer .fa{ color: #fff;}
