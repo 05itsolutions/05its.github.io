@@ -229,6 +229,41 @@ footer h3::after {
 #projects p{ color: #d44900; border-bottom: 1px solid #d44900; padding-bottom: 10px;}
 #projects p:hover{ color: #333; border-bottom-color: #333;}
 
+.nav-tabs .nav-link{ background-color: #d44900; color: #fff; border-color:  #fff !important;}
+.nav-tabs .active{border-color: #d44900 #d44900 #fff !important; color: #d44900 !important;}
+.tab-content{ border: 1px solid #d44900; border-top: none;}
+.diagram-header{position: relative;}
+
+.diagram-header::after
+{
+    content: " ";
+    height: 0;
+    position: absolute;
+    bottom: -10px;
+    width: 0;
+    z-index: 1;
+    left: 45%;
+    border: medium solid #d44900;
+    border-width: 10px 10px 0px 10px;
+    border-color: #d44900 transparent transparent transparent;
+}
+
+.diagram-footer{position: relative;}
+
+.diagram-footer::after
+{
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: -10px;
+    width: 0;
+    z-index: 1;
+    left: 45%;
+    border: medium solid #d44900;
+    border-width: 0px 10px 10px 10px;
+    border-color: transparent transparent #d44900 transparent;
+}
+
 .question-no{width: 50px; height: 50px; font-weight: bold; font-size: 1.5em; padding-top: 5px;}
 .answer{border-left: 2px solid #d44900;}
 
